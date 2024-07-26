@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio Creation</title>
+    <style>
+        body {
+            background-image: url(Creambg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color:black;
+            padding: 5px;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin:  15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            color: rgb(3, 0, 0);
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #333;
+            color: rgb(12, 9, 9);
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+        table, tr, th, td{
+            text-align: center;
+            border: 1px solid black;
+            padding: 0.5cm;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header >
+        <head>
+            <h1 style="text-align:center;color: white;">SANJAYRAJ</h1>
+            <h3 style="text-align:center;color: white;">Student at SKCET</h3>
+        </head>
+        <nav style="text-align: center;" >
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#edu">Edu Details</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#POSITIONS">Positions</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achieve">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button style="background-color:ghostwhite; " onclick="viewResume()">View Resume</button></li>
+                <li><button style="background-color: ghostwhite; "onclick="downloadResume()">Download Resume</button></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <section style="display: flex; padding: 5px;">
+
+        <div><img src="PROFILE PIC.1.JPG" style="width: 200px; height: 300px;"></div>
+        <div >
+        <h2 style="padding-bottom: 100px;" >Bio</h2>
+        <p style="font-size: large; line-height: 150%;">
+            Hey Im Sanjay, Im glad to introduce myself as a Under Graduate Student in Sri Krishna College of Engineering And Technology.Eager to learn Software Languages and excel as a Software Engineer.            
+        </p>
+        </div>
+    </section>
+    <br><br>
+    <hr>
+    <section id="edu">
+        <h2>Education Details</h2>
+        <body>
+            <form>
+                <table border="10px">
+                    <tr>
+                        <th>GRADE</th>
+                        <th>INSTITUTION</th>
+                        <th>PERCENTAGE</th>
+                        <th>YEAR OF PASSING</th>
+                    </tr>
+                    <tr>
+                        <td><b>10</b></td>
+                        <td><b>CMS Matriculatuon Higher Secondary School</b></td>
+                        <td><b>83%</b></td>
+                        <td><b>2020</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>12</b></td>
+                        <td><b>CMS Matriculatuon Higher Secondary School</b></td>
+                        <td><b>95%</b></td>
+                        <td><b>2022</b></td>
+                    </tr>
+                </table>
+            </form>
+        </body>
+        <br><br>
+    </section>
+    <hr>
+    <section id="skills">
+        <h2>SKILLS</h2><br>
+        <ul>
+            <li>Java Programming</li>
+            <li>Database Management System</li>
+            <li>Problem Solving</li>
+            <li>C++ Programming</li>
+            <li>HTML,CSS</li>
+            <li>SQL</li>
+        </ul>
+     </section>
+     <hr>
+    <section id="POSITIONS">
+        <h2>POSITIONS</h2>
+        <ul>
+            <li>Intern in Kinpaun Technologies(Electronic and Electrical Integrations) in the
+                academic year 2023-2024</li>
+            <li>Member in Standards Club(Dept of Electronics and Communication Engineering)</li>
+        </ul>
+    </section>
+    <hr>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Third eye for Blind - Ultrasonic Vibrator Glove :
+Helping Blind people for navigation by avoiding obstacles using buzzer and vibrator alert
+system</li><br>
+        </ul>
+    </section>
+    <hr>
+    <section id="achieve">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Completed National Level Seminar on Paradigm Shift of 5G and Tetrahertz
+                Antenna Design for Semantic Evolution in Embedded Systems sponsored by DRDO
+                and certified by IEE</li>
+            <li>Completed Java Programming at QTREE TECHNOLOGIES certified by ISO during
+                JUL to AUG 2022</li>
+            <li>Winner in Technical Quiz conducted at BANNARI AMMAN INSTITUTE OF
+                TECHNOLOGY during ASTRAA 2024.
+                </li>
+            <li>Completed National Level Seminar on DATA ANALYTICS USING R at the event of
+                KRIYA 2024 held on february 2024 at PSG College of technoloogy.
+                </li>
+        </ul>
+    </section>
+    <hr>
+    <section id="contact">
+        <h2>Contact</h2>
+        <h4 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">SANJAYRAJ RA</h4>
+        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Email: sanjayraj2809@gmail.com</p>
+        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Phone: +91 9345284075</p>
+    </section>
+    <hr>
+    <script>
+        function viewResume() {
+            window.open('Sample Resume.pdf', '_blank');
+        }
+
+        function downloadResume() {
+            const link = document.createElement('a');
+            link.href = 'Sample Resume.pdf';
+            link.download = 'Sample Resume.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>
